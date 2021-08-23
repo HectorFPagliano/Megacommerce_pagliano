@@ -1,0 +1,26 @@
+/*Estilos footer*/ 
+
+footer {
+	background-color: $color-amarillo;
+	margin: 1px;
+	.text-uppercase {
+		color: $color-negro;
+	}
+/*Aplique una operacion*/ 
+	a {
+		color: $color-negro;
+		font-weight: $ancho/2; 
+	}
+	.btn-outline-light {
+		color: $color-negro;
+		border-color: $color-negro;
+		&:hover {
+			color: #f8f9fa;
+			background-color: #b2b2b2;
+			border-color: $color-negro;
+		}
+	}
+	p{
+		color: $color-negro;
+	}
+}

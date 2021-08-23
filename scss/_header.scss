@@ -1,0 +1,63 @@
+/*Estilos header*/ 
+.header {
+	background-color: #e0ff00;
+	margin: -8px;
+	padding: 15px;
+	.header__logo {
+		display: inline-block;
+	}
+}
+#menu-principal {
+	li {
+		a {
+			text-decoration: none;
+			color: #121212;
+			font-weight: bold;
+		}
+		padding: 12px;
+		position: relative;
+		font-size: 15px;
+		color: black;
+		margin-right: 8px;
+		&:hover {
+			background: #cab0b096;
+			border: #1e1e1e 1px solid;
+		}
+	}
+	li.active {
+		a {
+			color: #1e1e1e;
+		}
+	}
+	list-style: none;
+	padding-left: 0;
+}
+/*Active para la seccion sobre la que estoy*/ 
+li.active {
+	background: #cab0b096;
+	border: #1e1e1e 1px solid;
+}
+
+@media (min-width: 800px) {
+	.divpadre {
+		display: flex;
+		flex-direction: row;
+	}
+	div#navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1140px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#menu-principal {
+		display: flex;
+	}
+
+}
+#navbar {
+	text-align: center;
+}

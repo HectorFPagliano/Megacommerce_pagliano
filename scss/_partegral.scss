@@ -1,0 +1,39 @@
+/*Estilos de texto*/
+h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	color: #e0ff00;
+	padding: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 2rem;
+	color: #e0ff00;
+	padding: 17px;
+}
+h3{
+	color: #e0ff00;
+	padding: 15px;
+}
+p{
+color: #ffffff;;
+}
+.card-text{
+	color: $color-negro;
+}
+/*Estilos del fondo y de la pagina en general*/
+body {
+	font-family: Montserrat;
+	background: rgb(255,255,255);
+	background-color : #121212 !important ;
+}
+.table{
+	color: $color-blanco !important;
+
+}
+
+
+
+
+
+
