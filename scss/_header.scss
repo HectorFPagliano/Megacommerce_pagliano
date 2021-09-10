@@ -5,6 +5,7 @@
 	padding: 15px;
 	.header__logo {
 		display: inline-block;
+		padding-bottom: 2%;
 	}
 }
 #menu-principal {
@@ -60,4 +61,8 @@ li.active {
 }
 #navbar {
 	text-align: center;
+}
+.noticia {
+	text-align: center;
+	padding-bottom: 2%;
 }

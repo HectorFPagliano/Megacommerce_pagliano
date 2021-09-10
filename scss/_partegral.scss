@@ -26,14 +26,24 @@ body {
 	font-family: Montserrat;
 	background: rgb(255,255,255);
 	background-color : #121212 !important ;
+	padding-left: 1%;
+    padding-right: 1%;
 }
 .table{
 	color: $color-blanco !important;
 
 }
+/*color de fondo de la card de la imagen*/
+.card.fondo-card {
+		background-color: #e0ff00;
+}
 
-
-
-
-
+.img{
+	width:100%;
+    max-width: 500px ;
+}
+/*PARA ACOMODAR BOTONES PAG PROD*/
+.btn-BOTT{
+	margin: 20px;
+}
 

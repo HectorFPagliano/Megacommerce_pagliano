@@ -5,7 +5,8 @@
   margin: -8px;
   padding: 15px; }
   .header .header__logo {
-    display: inline-block; }
+    display: inline-block;
+    padding-bottom: 2%; }
 
 #menu-principal {
   list-style: none;
@@ -50,6 +51,10 @@ li.active {
 #navbar {
   text-align: center; }
 
+.noticia {
+  text-align: center;
+  padding-bottom: 2%; }
+
 /*Estilos de texto*/
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,10 +82,24 @@ p {
 body {
   font-family: Montserrat;
   background: white;
-  background-color: #121212 !important; }
+  background-color: #121212 !important;
+  padding-left: 1%;
+  padding-right: 1%; }
 
 .table {
   color: #ffffff !important; }
+
+/*color de fondo de la card de la imagen*/
+.card.fondo-card {
+  background-color: #e0ff00; }
+
+.img {
+  width: 100%;
+  max-width: 500px; }
+
+/*PARA ACOMODAR BOTONES PAG PROD*/
+.btn-BOTT {
+  margin: 20px; }
 
 /*Estilos footer*/
 footer {
@@ -101,61 +120,6 @@ footer {
       border-color: #121212; }
   footer p {
     color: #121212; }
-
-/*estilo de la parte promocional*/
-/*Regla bem*/
-.nuestros-productos .nuestros-productos__box {
-  box-shadow: 0 4px 8px 0 #e0ff00;
-  max-width: 425px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  display: inline-block;
-  transition: transform .2s; }
-  .nuestros-productos .nuestros-productos__box button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #e0ff00;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px; }
-    .nuestros-productos .nuestros-productos__box button:hover {
-      opacity: 0.7; }
-  .nuestros-productos .nuestros-productos__box:hover {
-    transform: scale(1.1);
-    background-color: #dedede;
-    color: #121212; }
-    .nuestros-productos .nuestros-productos__box:hover p {
-      color: #121212; }
-  .nuestros-productos .nuestros-productos__box a {
-    color: #121212; }
-
-.precio {
-  font-size: 22px;
-  color: #e0ff00; }
-
-.detalle-productos td {
-  padding: 8px; }
-
-.gestion img {
-  transition: transform .2s; }
-  .gestion img:hover {
-    transform: translate(300px) scale(1.3); }
-
-.modal .btn-primary {
-  color: #fff;
-  background-color: #e47026;
-  border-color: #e47026; }
-  .modal .btn-primary:hover {
-    color: #fff;
-    background-color: #007b94;
-    border-color: #007b94; }
-
-.modal-dialog .modal-body {
-  text-align: center; }
 
 /*estilo de la parte promocional*/
 /*Regla bem*/
