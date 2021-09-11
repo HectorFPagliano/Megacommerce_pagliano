@@ -34,8 +34,10 @@ body {
 
 }
 /*color de fondo de la card de la imagen*/
-.card.fondo-card {
+.card{
+	&.fondo-card {
 		background-color: #e0ff00;
+	}	
 }
 
 .img{
@@ -44,7 +46,9 @@ body {
 	margin-top: 10%;
 }
 /*PARA ACOMODAR BOTONES PAG PROD*/
-.btn-BOTT{
-	margin: 20px;
+.btn-outline-light {
+	&.btn-tabla-gestion {
+		margin: 20%;
+	}
 }
 
