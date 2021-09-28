@@ -66,3 +66,22 @@ li.active {
 	text-align: center;
 	padding-bottom: 2%;
 }
+.navbar-nav .nav-link{
+	&.menu {text-decoration: none;
+			color: #121212;
+			font-weight: bold;
+			&:hover {
+				background: #cab0b096;
+				border: #1e1e1e 1px solid;
+			}
+			
+		}
+	    &.active {
+			background: #cab0b096;
+			border: #1e1e1e 1px solid;
+		}
+	}
+.noticia {
+	text-align: center;
+	padding-bottom: 2%;
+}

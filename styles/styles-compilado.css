@@ -55,22 +55,38 @@ li.active {
   text-align: center;
   padding-bottom: 2%; }
 
+.navbar-nav .nav-link.menu {
+  text-decoration: none;
+  color: #121212;
+  font-weight: bold; }
+  .navbar-nav .nav-link.menu:hover {
+    background: #cab0b096;
+    border: #1e1e1e 1px solid; }
+
+.navbar-nav .nav-link.active {
+  background: #cab0b096;
+  border: #1e1e1e 1px solid; }
+
+.noticia {
+  text-align: center;
+  padding-bottom: 2%; }
+
 /*Estilos de texto*/
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   color: #e0ff00;
-  padding: 20px; }
+  padding: 30px; }
 
 h2 {
   text-align: center;
   font-size: 2rem;
   color: #e0ff00;
-  padding: 17px; }
+  padding: 30px; }
 
 h3 {
   color: #e0ff00;
-  padding: 15px; }
+  padding: 30px; }
 
 p {
   color: #ffffff; }
@@ -87,7 +103,8 @@ body {
   padding-right: 1%; }
 
 .table {
-  color: #ffffff !important; }
+  color: #ffffff !important;
+  padding: 30px; }
 
 /*color de fondo de la card de la imagen*/
 .card.fondo-card {
@@ -101,6 +118,9 @@ body {
 /*PARA ACOMODAR BOTONES PAG PROD*/
 .btn-outline-light.btn-tabla-gestion {
   margin: 20%; }
+
+.p {
+  padding: 30px; }
 
 /*Estilos footer*/
 footer {
