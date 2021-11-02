@@ -122,6 +122,39 @@ body {
 .p {
   padding: 30px; }
 
+.form-select {
+  height: 47px;
+  width: 200px;
+  text-align-last: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px; }
+
+.btn-outline-light.botcomprar {
+  height: 50px;
+  width: 200px;
+  text-align-last: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1%;
+  background-color: #e0ff00;
+  border: #e0ff00;
+  color: black; }
+
+.table-responsive td, .table-responsive th {
+  border: 1px solid #e0ff00;
+  text-align: left;
+  padding: 20px; }
+
+.table-responsive tr:nth-child(even) {
+  background-color: black; }
+
 /*Estilos footer*/
 footer {
   background-color: #e0ff00;
