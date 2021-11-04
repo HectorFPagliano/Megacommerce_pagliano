@@ -50,7 +50,7 @@ function createBox() {
     let cantidadcuotas = selectcuotas.value;
     // Arrays  que permite acceder al precio y descuento del 10% pago contado
     
-    var arraySistemas = [];
+    let arraySistemas = [];
     arraySistemas.push(new Sistema('Empresa', 100000, cantidadcuotas));
     arraySistemas.push(new Sistema('Supermecado', 120000,cantidadcuotas));
     arraySistemas.push(new Sistema('Ess', 150000, cantidadcuotas));
@@ -65,7 +65,7 @@ function createBox() {
         if (sistemaa.cantCuotas == 1)
             sistemaa.descuento();
     
-    var tableContenido = `<tr>
+    let tableContenido = `<tr>
     <th>Sistema</th>
     <th>Precio</th>
     <th>Cantidad Cuotas</th>
@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if(cantidadDeCuotasJSON) {
         let selectcuotas =  document.getElementById("cars");
         //selectcuotas.value = cantidadDeCuotasJSON
-        var cantidadDeCuotas = JSON.parse(cantidadDeCuotasJSON);
+        let cantidadDeCuotas = JSON.parse(cantidadDeCuotasJSON);
         selectcuotas.value = cantidadDeCuotas.cantidadcuotas;
         createBox();
     }
