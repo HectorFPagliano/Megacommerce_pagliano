@@ -98,3 +98,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 });
 
+
+
+//jquery
+$(document).ready(() =>  {
+    $('#banco').hide();
+
+    $('#mostrardbancarios').click(function() {
+        $('#banco').show();
+    });
+    $('#ocultardbancarios').click(function() {
+        $('#banco').hide();
+    });
+    
+});

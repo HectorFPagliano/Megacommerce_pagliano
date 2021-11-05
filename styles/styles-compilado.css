@@ -110,6 +110,10 @@ body {
 .card.fondo-card {
   background-color: #e0ff00; }
 
+.card.espacios {
+  margin-inline: 20px;
+  margin: 30px; }
+
 .img {
   width: 100%;
   max-width: 500px;
@@ -154,6 +158,11 @@ body {
 
 .table-responsive tr:nth-child(even) {
   background-color: black; }
+
+.btn-group-lg > .btn, .btn-lg {
+  background-color: black;
+  color: #e0ff00;
+  border-color: #121212; }
 
 /*Estilos footer*/
 footer {

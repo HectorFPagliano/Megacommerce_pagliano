@@ -39,6 +39,11 @@ body {
 	&.fondo-card {
 		background-color: #e0ff00;
 	}	
+
+	&.espacios {
+	margin-inline: 20px;
+	margin: 30px;
+	}
 }
 
 .img{
@@ -101,4 +106,12 @@ margin-bottom: 30px
 	  }
 	  
 	 
+}
+
+//estilos para los botones de acceso a los datos de la transferencia
+.btn-group-lg>.btn, .btn-lg{
+	background-color: black;
+	color: #e0ff00;
+	border-color: #121212;
+
 }

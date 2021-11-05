@@ -49,7 +49,50 @@
       </div>
     </nav>
   </header>
-  <h1 class="container-fluid">Seleccione la cantidad de cuotas</h1>
+  <h1 class="container-fluid">Medios de pago disponibles</h1>
+  <div class="card fondo-card espacios">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">Los pagos disponibles para compras online son por transferencia directa o con trajeta de credito
+      </p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <section>
+        <button id="mostrardbancarios" type="button" class="btn btn-primary btn-lg bottransf">Mostrar datos para transfrencia</button>
+        <button id="ocultardbancarios" type="button" class="btn btn-primary btn-lg">Cancelar</button>
+        <div id="banco" >
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <ul class="card-text tranf">  
+              <li>Adherente:                  Megacommerce</li>
+              <li>CBU:                        33005339253300818811</li>
+              <li>CUIT:                       30-50000173-5. </li>
+              <li>EMAIL:                      Megacommerce.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Pago con transferencia -->
+  <!-- <section>
+    <button id="mostrardbancarios" type="button" class="btn btn-primary btn-lg">Mostrar datos para transfrencia</button>
+    <button id="ocultardbancarios" type="button" class="btn btn-primary btn-lg">Cancelar</button>
+    <div id="banco" >
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <ul class="card-text">  
+          <li>Adherente:                  Megacommerce</li>
+          <li>CBU:                        33005339253300818811</li>
+          <li>CUIT:                       30-50000173-5. </li>
+          <li>EMAIL:                      Megacommerce.com</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </section>
+  <h1 class="container-fluid">Vea las cuotas disponibles con tarjeta de credito</h1>
   <div id="createBoxBtn" > 
   <select name="cars" id="cars" class="form-select container-fluid " aria-label="Default select example" >
     <option value="1">1</option>
@@ -228,5 +271,6 @@
     </div>
   </div>
     <script src="../js/main.js"></script> 
+    
 </body>
 </html>
