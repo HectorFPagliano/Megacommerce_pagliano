@@ -112,3 +112,37 @@ $(document).ready(() =>  {
     });
     
 });
+
+
+// ajax en mi proyecto con un json estatico
+const url_json = "/json_datos.json"
+
+
+$("#btn2").click(()=>{
+
+    $.getJSON(url_json,function(respuesta,estado){
+
+
+        if(estado === "success"){
+
+            let datos_ventas = respuesta.ventas;
+
+            for (const dato of datos_ventas){
+
+                $("#atencion-al-cliente").prepend(`<tr>
+                                    <td>${dato.nombre}</td>
+                                    <td> ${dato.telefonos}</td>
+                                    <td> ${dato.horarios}</td>
+                   </tr>`);
+            }
+            $("#btn2").hide();
+
+        }else{
+
+            console.log(estado);
+        }
+
+    })
+
+
+});

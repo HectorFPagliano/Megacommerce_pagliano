@@ -1,0 +1,23 @@
+{
+    "ventas": 
+
+   [
+        {
+
+            "nombre":"Federico Coppola",
+            "telefonos" : "0342-51158716" ,
+            "horarios"  : "Atencion telefonica de 9 a 17"
+ 
+         },{"nombre":"Lucas Alvarez",
+            "telefonos" : "0342-51158716",
+            "horarios"  : "Atencion telefonica de 9 a 17" 
+        },{
+            "nombre":"Roman Barrios",
+            "telefonos" : "0342-51158716" ,
+            "horarios"  : "Atencion telefonica de 9 a 17"
+        }
+   ]
+
+
+
+}
