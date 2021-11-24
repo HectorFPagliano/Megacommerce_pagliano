@@ -115,7 +115,7 @@ $(document).ready(() =>  {
 
 
 // ajax en mi proyecto con un json estatico
-const url_json = "/json_datos.json"
+const url_json = "../json_datos.json"
 
 
 $("#btn2").click(()=>{
