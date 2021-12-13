@@ -1,0 +1,14 @@
+[
+    {
+      "tipo": "Empresa",
+      "precio": 100000
+    },
+    {
+      "tipo": "Supermecado",
+      "precio": 120000
+    },
+    {
+      "tipo": "Ess",
+      "precio": 150000
+    }
+  ]

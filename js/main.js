@@ -12,7 +12,7 @@ class Sistema{
         this.precio = this.precio  - this.precio*.10;
         this.calcularMontoCouota();
     }
-// Metodo para calcular el monto de la cuota
+// Metodo para calcular el monto de la cuota, permite acceder al precio y descuento del 10% pago contado
     calcularMontoCouota () {
         
         if (this.cantCuotas <= 6) {
@@ -48,42 +48,56 @@ selectcuotas.addEventListener('change',createBox);
 function createBox() {
 
     let cantidadcuotas = selectcuotas.value;
-    // Arrays  que permite acceder al precio y descuento del 10% pago contado
-    
-    let arraySistemas = [];
-    arraySistemas.push(new Sistema('Empresa', 100000, cantidadcuotas));
-    arraySistemas.push(new Sistema('Supermecado', 120000,cantidadcuotas));
-    arraySistemas.push(new Sistema('Ess', 150000, cantidadcuotas));
-    
-    const cantidadDeCuotas = { cantidadcuotas: cantidadcuotas };
-    const cantidadDeCuotasJSON    = JSON.stringify(cantidadDeCuotas);
+   
+//Dettalles de cada sistema, como precio
+    const url_json_sistemas = "../sistemas_datos.json"
 
-    localStorage.setItem('cantidadDeCuotasJSON', cantidadDeCuotasJSON)
+    $.getJSON(url_json_sistemas, function(data, estado) {
 
-    //Nos muestra el valor final del sistema en caso de elegir 1 solo pago
-    for (const sistemaa of arraySistemas)
-        if (sistemaa.cantCuotas == 1)
-            sistemaa.descuento();
+        if(estado === "success"){
+
+            let arraySistemas = [];
+
+            $.each( data, function(i) {
+                if(data[i]) {
+                    arraySistemas.push(new Sistema(data[i].tipo, data[i].precio, cantidadcuotas));
+                }
+            });
+
+           const cantidadDeCuotas = { cantidadcuotas: cantidadcuotas };
+           const cantidadDeCuotasJSON    = JSON.stringify(cantidadDeCuotas);
+       
+           localStorage.setItem('cantidadDeCuotasJSON', cantidadDeCuotasJSON)
+       
+           //Nos muestra el valor final del sistema en caso de elegir 1 solo pago
+           for (const sistemaa of arraySistemas)
+               if (sistemaa.cantCuotas == 1)
+                   sistemaa.descuento();
+           
+           let tableContenido = `<tr>
+            <th>Sistema</th>
+            <th>Precio</th>
+            <th>Cantidad Cuotas</th>
+            <th>Valor Cuota</th>
+            </tr> `;
+           
+           for (const sistemaa of arraySistemas) {
+               tableContenido += `<tr>
+               <td>${sistemaa.tipo}</td>
+               <td>${sistemaa.precio}</td>
+               <td>${sistemaa.cantCuotas}</td>
+               <td>${sistemaa.valcuota}</td>
+               </tr>`;
+           }
+                   
+           let table = document.getElementById("table-precios");
+           
+           table.innerHTML = tableContenido;
+
+        }
+    });
     
-    let tableContenido = `<tr>
-    <th>Sistema</th>
-    <th>Precio</th>
-    <th>Cantidad Cuotas</th>
-    <th>Valor Cuota</th>
-    </tr> `;
-    
-    for (const sistemaa of arraySistemas) {
-        tableContenido += `<tr>
-        <td>${sistemaa.tipo}</td>
-        <td>${sistemaa.precio}</td>
-        <td>${sistemaa.cantCuotas}</td>
-        <td>${sistemaa.valcuota}</td>
-        </tr>`;
-    }
-            
-    let table = document.getElementById("table-precios");
-    
-    table.innerHTML = tableContenido;
+ 
 
 }
 
@@ -137,12 +151,11 @@ $("#btn2").click(()=>{
             }
             $("#btn2").hide();
 
-        }else{
-
-            console.log(estado);
         }
-
     })
 
 
 });
+
+// Validacion formulario
+
